@@ -1,0 +1,126 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Times New Roman', Times serif;
+	line-height: 1.6;
+	color: palevioletred;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: lightseagreen;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px 45px;
+    font-size: 30px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: lawngreen;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: black;
+}
+
+/* ---- Layout Containers ---- */
+
+
+
+.main-footer {
+	text-align: center;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	background-color: aqua;
+    width: 100%;
+}
+
+.test { border: 1px solid black;
+    margin: 9px auto;
+    background-color: white;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 789px) {
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.container {
+		width: 85%;
+		max-width: 1150px;
+		margin: 0 auto;
+	}
+
+h1 {
+        text-align: center;
+    font-size:30pt;
+		float: center;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 50px;
+	}
+
+
+	/* ---- Columns ---- */
+
+	.col {
+		float: left;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.primary {
+		width: 60%;
+	}
+	
+	.secondary {
+		width: 40%;
+	}
+	
+	/* ------------- */
+
+	.feat-img {
+		width: 300px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 25px;
+		margin-bottom: 25px;
+		padding: 10px;
+		border: solid 1px #d9e4ea;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
